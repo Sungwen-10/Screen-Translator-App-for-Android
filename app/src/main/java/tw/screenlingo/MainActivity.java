@@ -135,7 +135,7 @@ public final class MainActivity extends Activity {
         help.addView(Ui.text(this, "本服務可能包含 Google 提供的翻譯。Google 對翻譯的準確性、可靠性、適售性、特定用途適用性及不侵權性，不提供任何明示或默示保證。", 12, Ui.MUTED));
         Ui.gap(root, 12);
         root.addView(Ui.attribution(this), new LinearLayout.LayoutParams(Ui.dp(this, 158), Ui.dp(this, 30)));
-        root.addView(Ui.text(this, "Google 智慧鏡頭分享 · 離線 ML Kit／Tesseract\n0.1.8 / Android 11+ / Pixel 5 優先", 12, Ui.MUTED));
+        root.addView(Ui.text(this, "Google 智慧鏡頭分享 · 離線 ML Kit／Tesseract\n0.1.9 / Android 11+ / Pixel 5 優先", 12, Ui.MUTED));
         scroll.addView(root); setContentView(scroll);
         if (getIntent().getBooleanExtra("restart", false)) handler.post(this::requestStart);
         if (getIntent().getBooleanExtra("askRecord", false)) handler.post(this::requestRecording);

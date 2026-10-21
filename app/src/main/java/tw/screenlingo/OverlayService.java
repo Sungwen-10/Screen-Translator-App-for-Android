@@ -295,13 +295,7 @@ public final class OverlayService extends Service {
             public void dismiss() { dismissResult(); }
         });
         frame.addView(canvas, new FrameLayout.LayoutParams(-1, -1));
-        ImageView badge = Ui.attribution(this);
-        badge.setPadding(Ui.dp(this, 8), Ui.dp(this, 6), Ui.dp(this, 8), Ui.dp(this, 6));
-        badge.setBackground(Ui.rounded(this, Color.WHITE, 10));
-        FrameLayout.LayoutParams badgeParams = new FrameLayout.LayoutParams(Ui.dp(this, 174), Ui.dp(this, 36), Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
-        int safeBottom = windows.getMaximumWindowMetrics().getWindowInsets().getInsetsIgnoringVisibility(WindowInsets.Type.systemBars()).bottom;
-        badgeParams.bottomMargin = safeBottom + Ui.dp(this, 8);
-        frame.addView(badge, badgeParams);
+        AttributionBadge.add(frame, prefs);
         frame.setFocusableInTouchMode(true);
         frame.setDescendantFocusability(android.view.ViewGroup.FOCUS_BEFORE_DESCENDANTS);
         frame.setOnKeyListener((v, key, event) -> {
