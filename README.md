@@ -1,5 +1,7 @@
 # 浮譯 ScreenLingo
 
+最新公開版本：[ScreenLingo v0.1.8 Release](https://github.com/Sungwen-10/Screen-Translator-App-for-Android/releases/tag/v0.1.8)，可下載 Pixel 5 APK、原始碼 ZIP、安裝說明與 SHA256 校驗檔。
+
 以 Pixel 5 為優先的 Android 原生螢幕翻譯 App，最低 Android 11。0.1.8 修正全螢幕遊戲底部選單被誤當成隱藏導覽列而略過的問題，並改善離線模式對彩色／描邊遊戲選單的漏讀：保留原圖辨識結果，再用分區掃描、字色分離及小字放大補漏，並拆開相鄰按鈕。保留 0.1.7 移除遮畫面提示的修正。保留貼邊半球與橫直向切換持續錄影。預設按半球擷取目前畫面，再透過 Google App 公開的圖片分享入口開啟 Google 智慧鏡頭；使用者在 Google 畫面按「翻譯」，選擇中文（繁體）或其他目標語言。需要網路，截圖交給 Google 線上處理。保留原本的離線原位覆蓋，可在「翻譯方式」切換。
 
 ## Google 智慧鏡頭模式（預設）
